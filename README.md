@@ -1,3 +1,3 @@
 # iOS
 
-Projects done while learning iOS development
+- [SwiftUI Slots](https://github.com/ashwindasr/iOS/tree/main/swiftui-slots)
