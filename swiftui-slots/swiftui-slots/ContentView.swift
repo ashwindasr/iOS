@@ -168,10 +168,7 @@ struct ContentView: View {
                     
                     
                     // Set all background colors to white
-                    successColor =
-                        [[Color.white, Color.white, Color.white],
-                         [Color.white, Color.white, Color.white],
-                         [Color.white, Color.white, Color.white]]
+                    successColor = Array(repeating: Array(repeating: Color.white, count: 3), count: 3)
                     
                     
                     // Get the total number of matches in the grid
