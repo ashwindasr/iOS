@@ -56,14 +56,14 @@ struct ContentView: View {
     }
     
     func checkImages(_ coordinates1:[Int], _ coordinates2:[Int], _ coordinates3:[Int]) -> Bool {
-        if Set([displayImages[coordinates1[0]][coordinates1[0]],
-                displayImages[coordinates2[0]][coordinates2[0]],
-                displayImages[coordinates3[0]][coordinates3[0]]]).count == 1 {
+        if Set([displayImages[coordinates1[0]][coordinates1[1]],
+                displayImages[coordinates2[0]][coordinates2[1]],
+                displayImages[coordinates3[0]][coordinates3[1]]]).count == 1 {
             
-            successColor[coordinates1[0]][coordinates1[0]] = Color.green
-            successColor[coordinates2[0]][coordinates2[0]] = Color.green
-            successColor[coordinates3[0]][coordinates3[0]] = Color.green
-            
+            successColor[coordinates1[0]][coordinates1[1]] = Color.green
+            successColor[coordinates2[0]][coordinates2[1]] = Color.green
+            successColor[coordinates3[0]][coordinates3[1]] = Color.green
+                        
             return true
         }
         
