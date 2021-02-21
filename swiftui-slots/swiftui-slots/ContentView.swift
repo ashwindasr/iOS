@@ -13,7 +13,7 @@ struct ContentView: View {
     private let images:[String] = ["apple", "cherry", "star"]
     
     // For initial display, generating 3x3 image grid
-    @State private var displayImages:[[String]] = Array(repeating: Array(repeating: "apple", count: 3), count: 3)
+    @State private var displayImages:[[String]] = Array(repeating: ["apple", "cherry", "star"], count: 3)
     
     @State private var credits:Int = 100
     
