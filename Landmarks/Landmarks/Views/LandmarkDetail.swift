@@ -2,7 +2,7 @@ import SwiftUI
 
 struct LandmarkDetail: View {
     var landmark: Landmark
-    
+
     var body: some View {
         ScrollView {
             MapView(coordinate: landmark.locationCoordinate)
@@ -36,6 +36,7 @@ struct LandmarkDetail: View {
 
         }
         .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
