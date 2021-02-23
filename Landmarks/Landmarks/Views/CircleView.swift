@@ -1,6 +1,6 @@
 //
 //  CircleView.swift
-//  Landmarks
+//  SwiftUIDemo1
 //
 //  Created by Ashwin Das on 21/02/21.
 //
@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CircleView: View {
+    var image: Image
+    
     var body: some View {
-        Image("mtfuji")
+        image
             .resizable()
             .frame(width: 250, height: 250)
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
@@ -20,6 +22,6 @@ struct CircleView: View {
 
 struct CircleView_Previews: PreviewProvider {
     static var previews: some View {
-        CircleView()
+        CircleView(image: Image("mtfuji"))
     }
 }
